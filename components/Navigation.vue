@@ -85,6 +85,6 @@
     border-radius: 3px;
     transition: all 0.3s ease 0s;
     font-weight: 700; margin-left: 10px;}
-.nav .menu a.nuxt-link-active {background: rgba(255,255,255,.15);}
+.nav .menu a.nuxt-link-exact-active {background: rgba(255,255,255,.15);}
 
 </style>
