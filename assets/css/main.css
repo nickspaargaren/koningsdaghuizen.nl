@@ -13,6 +13,14 @@ body {
 
 .content {max-width: 1200px; margin: auto; padding: 20px;}
 
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0 0 .5em 0;
+  line-height: 1.35em;
+}
+
 h1 {
   color: #fc8100;
   font-family: "Open Sans",Helvetica Neue,Helvetica,Arial,Sans-Serif;
@@ -21,19 +29,19 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  color: #fc8100;
+  font-family: "Open Sans",Helvetica Neue,Helvetica,Arial,Sans-Serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* Grid Templates */
-div[class*="grid"] {hyphens: auto; -webkit-hyphens: auto; display: grid; grid-gap: 30px;}
+div[class*="grid"] {display: grid; grid-gap: 30px;}
 div[class*="grid"].vertical-align-middle > div {margin: auto 0;}
 div[class*="grid"] img {max-width: 100%; height: auto !important;}
 .grid-2x {grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));}
 .grid-3x {grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
 .grid-4x {grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));}
 /* Einde Grid Templates */
-
-.blok {
-    padding: 30px 30px 20px;
-    background: #fff;
-    box-shadow: 10px 20px 40px 0 rgb(48 63 77 / 10%);
-    border-radius: 3px;
-    transition: all .3s ease;
-}
