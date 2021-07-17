@@ -13,9 +13,7 @@
 </template>
 
 <script lang="ts">
-import Blok from '~/components/Blok.vue'
 export default {
-  components: { Blok },
   async asyncData ({ $content }: { $content: any}) {
     const page = await $content('welkom').fetch()
     const kermis = await $content('kermis').fetch()
