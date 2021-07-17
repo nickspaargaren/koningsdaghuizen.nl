@@ -5,30 +5,17 @@
     </div>
 
     <div class="grid-3x">
-      <div class="blok">
-        <h2>
-          {{ plein2000.title }}
-        </h2>
-        {{ plein2000.intro }}
-      </div>
-      <div class="blok">
-        <h2>
-          {{ taptoe.title }}
-        </h2>
-        {{ taptoe.intro }}
-      </div>
-      <div class="blok">
-        <h2>
-          {{ kermis.title }}
-        </h2>
-        {{ kermis.intro }}
-      </div>
+      <Blok :title="plein2000.title" :content="plein2000.intro" />
+      <Blok :title="taptoe.title" :content="taptoe.intro" />
+      <Blok :title="kermis.title" :content="kermis.intro" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import Blok from '~/components/Blok.vue'
 export default {
+  components: { Blok },
   async asyncData ({ $content }: { $content: any}) {
     const page = await $content('welkom').fetch()
     const kermis = await $content('kermis').fetch()
