@@ -6,7 +6,7 @@
 
 <script lang="ts">
 export default {
-  async asyncData ({ $content }) {
+  async asyncData ({ $content }: { $content: any}) {
     const page = await $content('toiletten').fetch()
     return {
       page

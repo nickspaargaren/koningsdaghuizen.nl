@@ -29,7 +29,7 @@
 
 <script lang="ts">
 export default {
-  async asyncData ({ $content }) {
+  async asyncData ({ $content }: { $content: any}) {
     const page = await $content('welkom').fetch()
     const kermis = await $content('kermis').fetch()
     const taptoe = await $content('taptoe').fetch()
