@@ -1,13 +1,17 @@
 <template>
   <div>
-    <div style="text-align: center;">
-      <nuxt-content :document="page" />
-    </div>
+    <Slider />
 
-    <div class="grid-3x">
-      <Blok :title="plein2000.title" :content="plein2000.intro" />
-      <Blok :title="taptoe.title" :content="taptoe.intro" />
-      <Blok :title="kermis.title" :content="kermis.intro" />
+    <div class="content">
+      <div style="text-align: center;">
+        <nuxt-content :document="page" />
+      </div>
+
+      <div class="grid-3x">
+        <Blok :title="plein2000.title" :content="plein2000.intro" />
+        <Blok :title="taptoe.title" :content="taptoe.intro" />
+        <Blok :title="kermis.title" :content="kermis.intro" />
+      </div>
     </div>
   </div>
 </template>

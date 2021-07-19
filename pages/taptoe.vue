@@ -1,3 +1,5 @@
 <template>
-  <div>taptoe</div>
+  <div class="content">
+    taptoe
+  </div>
 </template>

@@ -1,3 +1,5 @@
 <template>
-  <div>kermis</div>
+  <div class="content">
+    kermis
+  </div>
 </template>

@@ -1,3 +1,5 @@
 <template>
-  <div>Kindervrijmarkt</div>
+  <div class="content">
+    Kindervrijmarkt
+  </div>
 </template>

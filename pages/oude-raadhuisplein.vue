@@ -1,3 +1,5 @@
 <template>
-  <div>oude-raadhuisplein</div>
+  <div class="content">
+    oude-raadhuisplein
+  </div>
 </template>

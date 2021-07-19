@@ -1,3 +1,5 @@
 <template>
-  <div>oranjemarkt</div>
+  <div class="content">
+    oranjemarkt
+  </div>
 </template>

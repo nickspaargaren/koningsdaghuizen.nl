@@ -1,3 +1,5 @@
 <template>
-  <div>plein-2000</div>
+  <div class="content">
+    plein-2000
+  </div>
 </template>
