@@ -1,5 +1,17 @@
 <template>
   <div class="content">
-    Kindervrijmarkt
+    <nuxt-content :document="page" />
   </div>
 </template>
+
+<script lang="ts">
+export default {
+  async asyncData ({ $content }: { $content: any}) {
+    const page = await $content('kindervrijmarkt').fetch()
+
+    return {
+      page
+    }
+  }
+}
+</script>

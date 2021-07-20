@@ -12,6 +12,7 @@
         <Blok :title="taptoe.title" :content="taptoe.intro" />
         <Blok :title="kermis.title" :content="kermis.intro" />
       </div>
+      <nuxt-content :document="pageFooter" />
     </div>
   </div>
 </template>
@@ -23,12 +24,14 @@ export default {
     const kermis = await $content('kermis').fetch()
     const taptoe = await $content('taptoe').fetch()
     const plein2000 = await $content('plein-2000').fetch()
+    const pageFooter = await $content('welkom-afsluiter').fetch()
 
     return {
       page,
       plein2000,
       kermis,
-      taptoe
+      taptoe,
+      pageFooter
     }
   }
 }
