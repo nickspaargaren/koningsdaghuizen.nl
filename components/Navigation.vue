@@ -63,7 +63,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .nav {
   display: grid;
   grid-gap: 10px;

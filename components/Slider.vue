@@ -39,12 +39,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 img {width: 100%; height: auto;}
 .hooper {height: auto;}
 </style>
 
-<style>
+<style lang="scss">
 .hooper-next, .hooper-prev {background: #fff; border-radius: 30px; padding: 5px; display: flex;}
 .hooper-prev {left: 25px;}
 .hooper-next {right: 25px;}

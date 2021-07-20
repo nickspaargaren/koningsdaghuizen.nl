@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .blok {
     padding: 30px 30px 20px;
     background: #fff;

@@ -6,7 +6,8 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
 .footer {
   background-color: #fc8100;
   background: linear-gradient(#fe7500,#fc8100);
