@@ -12,7 +12,7 @@ export default {
       page
     }
   },
-  head (): any {
+  head () {
     return {
       title: 'Taptoe | Koningsdag Huizen'
     }

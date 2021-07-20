@@ -8,12 +8,11 @@
 export default {
   async asyncData ({ $content }: { $content: any}) {
     const page = await $content('kindervrijmarkt').fetch()
-
     return {
       page
     }
   },
-  head (): any {
+  head () {
     return {
       title: 'Kindervrijmarkt | Koningsdag Huizen'
     }

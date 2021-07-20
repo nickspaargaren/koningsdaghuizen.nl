@@ -8,12 +8,11 @@
 export default {
   async asyncData ({ $content }: { $content: any}) {
     const page = await $content('verkeer-en-parkeren').fetch()
-
     return {
       page
     }
   },
-  head (): any {
+  head () {
     return {
       title: 'Verkeer en parkeren | Koningsdag Huizen'
     }

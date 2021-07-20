@@ -5,21 +5,17 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
+export default {
   async asyncData ({ $content }: { $content: any}) {
-    const page:Array<any> = await $content('toiletten').fetch()
-
+    const page = await $content('toiletten').fetch()
     return {
       page
     }
   },
-  head (): any {
+  head () {
     return {
       title: 'Toiletten | Koningsdag Huizen'
     }
   }
-})
-
+}
 </script>
