@@ -12,9 +12,9 @@ export default {
       page
     }
   },
-  head () {
+  head (): any {
     return {
-      title: `${this.$data.page.title} | Koningsdag Huizen`
+      title: 'Taptoe | Koningsdag Huizen'
     }
   }
 }
