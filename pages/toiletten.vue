@@ -11,6 +11,11 @@ export default {
     return {
       page
     }
+  },
+  head () {
+    return {
+      title: `${this.$data.page.title} | Koningsdag Huizen`
+    }
   }
 }
 </script>

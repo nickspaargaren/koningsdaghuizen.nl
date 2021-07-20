@@ -33,6 +33,11 @@ export default {
       taptoe,
       pageFooter
     }
+  },
+  head () {
+    return {
+      title: 'Welkom | Koningsdag Huizen'
+    }
   }
 }
 </script>
