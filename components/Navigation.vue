@@ -23,9 +23,10 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import { mapMutations } from 'vuex'
 
-export default {
+export default Vue.extend({
   // Menu Data
   data () {
     return {
@@ -57,6 +58,7 @@ export default {
     })
   }
 }
+)
 
 </script>
 

@@ -11,15 +11,12 @@
 </template>
 
 <script>
-import {
-  Hooper,
-  Slide,
-  Navigation as HooperNavigation
-} from 'hooper'
+import Vue from 'vue'
+import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper'
 import 'hooper/dist/hooper.css'
 
-export default {
-  name: 'App',
+export default Vue.extend({
+  name: 'Slider',
   components: {
     Hooper,
     Slide,
@@ -37,6 +34,7 @@ export default {
     }
   }
 }
+)
 </script>
 
 <style lang="scss" scoped>
