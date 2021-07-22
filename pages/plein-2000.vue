@@ -1,15 +1,19 @@
 <template>
   <div class="content">
-    plein-2000
+    Plein 2000
   </div>
 </template>
 
 <script lang="ts">
-export default {
+
+import Vue from 'vue'
+
+export default Vue.extend({
   head () {
     return {
       title: 'Plein 2000 | Koningsdag Huizen'
     }
   }
-}
+})
+
 </script>

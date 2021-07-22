@@ -5,7 +5,10 @@
 </template>
 
 <script lang="ts">
-export default {
+
+import Vue from 'vue'
+
+export default Vue.extend({
   async asyncData ({ $content }: { $content: any}) {
     const page = await $content('kindervrijmarkt').fetch()
     return {
@@ -14,9 +17,9 @@ export default {
   },
   head () {
     return {
-      title: 'Kindervrijmarkt | Koningsdag Huizen'
+      title: `${this.$data.page.title} | Koningsdag Huizen`
     }
   }
-}
+})
 
 </script>

@@ -1,15 +1,19 @@
 <template>
   <div class="content">
-    fotos
+    Foto's
   </div>
 </template>
 
 <script lang="ts">
-export default {
+
+import Vue from 'vue'
+
+export default Vue.extend({
   head () {
     return {
       title: 'Foto\'s | Koningsdag Huizen'
     }
   }
-}
+})
+
 </script>

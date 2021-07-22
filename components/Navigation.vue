@@ -36,7 +36,7 @@ export default {
         { id: 3, title: 'Kindervrijmarkt', url: '/kindervrijmarkt' },
         { id: 4, title: 'Oranjemarkt', url: '/oranjemarkt' },
         { id: 5, title: 'Kermis', url: '/kermis' },
-        { id: 6, title: 'Taptoe', url: '/Taptoe' },
+        { id: 6, title: 'Taptoe', url: '/taptoe' },
         { id: 7, title: 'Foto\'s', url: '/fotos' },
         { id: 8, title: 'Toiletten', url: '/toiletten' },
         { id: 9, title: 'Verkeer en Parkeren', url: '/verkeer-en-parkeren' },
