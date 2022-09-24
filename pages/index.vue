@@ -6,7 +6,7 @@
 
 <template>
   <div>
-    <!-- <Slider /> -->
+    <Slider />
 
     <div class="content">
       <div style="text-align: center;">

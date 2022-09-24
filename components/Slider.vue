@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="navigation-wrapper">
-      <div ref="slider" class="keen-slider">
+      <div ref="container" class="keen-slider">
         <div class="keen-slider__slide">
-          <img src="images/slider/slide1.jpg">
+          <img src="~/assets/slider/slide1.jpg" width="100%" height="auto">
         </div>
         <div class="keen-slider__slide">
-          <img src="images/slider/slide2.jpg">
+          <img src="~/assets/slider/slide2.jpg" width="100%" height="auto">
         </div>
       </div>
       <svg
@@ -38,31 +38,28 @@
   </div>
 </template>
 
-<!-- <script>
+<script>
+  import { ref } from 'vue'
+
+import { useKeenSlider } from 'keen-slider/vue.es'
 import 'keen-slider/keen-slider.min.css'
-import KeenSlider from 'keen-slider'
 
 export default {
-  name: 'Slider',
-  data () {
-    return {
-      slider: null
-    }
-  },
-  mounted () {
-    this.slider = new KeenSlider(this.$refs.slider, {
+  setup(){
+
+    const current = ref(1)
+    const [container, slider] = useKeenSlider({
       loop: true,
-      initial: 1,
+      initial: current.value,
       slideChanged: (s) => {
-        this.current = s.details().relativeSlide
-      }
+        current.value = s.track.details.rel
+      },
     })
-  },
-  beforeDestroy () {
-    if (this.slider) { this.slider.destroy() }
+
+    return { container, slider }
   }
 }
-</script> -->
+</script>
 
 <style lang="scss">
 .navigation-wrapper {position: relative;}
