@@ -38,7 +38,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 import 'keen-slider/keen-slider.min.css'
 import KeenSlider from 'keen-slider'
 
@@ -62,7 +62,7 @@ export default {
     if (this.slider) { this.slider.destroy() }
   }
 }
-</script>
+</script> -->
 
 <style lang="scss">
 .navigation-wrapper {position: relative;}

@@ -10,56 +10,42 @@
       </Nuxtlink>
     </div>
 
-    <div v-if="menu" class="resmenu" @click="toggle">
+    <div v-if="menu" class="resmenu" @click="menu = !menu">
       <NuxtLink v-for="item in menuItems" :key="item.id" :to="item.url">
         {{ item.title }}
       </Nuxtlink>
     </div>
 
-    <div class="menuButton" @click="toggle">
+    <div class="menuButton" @click="menu = !menu">
       Menu
     </div>
   </div>
 </template>
 
+<script setup>
+  const menu = useState('menu',  () => false)
+</script>
+
 <script>
-import Vue from 'vue'
-import { mapMutations } from 'vuex'
-
-export default Vue.extend({
-  // Menu Data
-  data () {
-    return {
-      menuItems: [
-        { id: 0, title: 'Welkom', url: '/' },
-        { id: 1, title: 'Oude Raadhuisplein', url: '/oude-raadhuisplein' },
-        { id: 2, title: 'Plein 2000', url: '/plein-2000' },
-        { id: 3, title: 'Kindervrijmarkt', url: '/kindervrijmarkt' },
-        { id: 4, title: 'Oranjemarkt', url: '/oranjemarkt' },
-        { id: 5, title: 'Kermis', url: '/kermis' },
-        { id: 6, title: 'Taptoe', url: '/taptoe' },
-        { id: 7, title: 'Foto\'s', url: '/fotos' },
-        { id: 8, title: 'Toiletten', url: '/toiletten' },
-        { id: 9, title: 'Verkeer en Parkeren', url: '/verkeer-en-parkeren' },
-        { id: 10, title: 'Contact', url: '/contact' }
-      ]
-    }
-  },
-
-  // Menu logic
-  computed: {
-    menu () {
-      return this.$store.state.menu.isOpen
-    }
-  },
-  methods: {
-    ...mapMutations({
-      toggle: 'menu/toggle'
-    })
+  export default {
+    data () {
+      return {
+        menuItems: [
+          { id: 0, title: 'Welkom', url: '/' },
+          { id: 1, title: 'Oude Raadhuisplein', url: '/oude-raadhuisplein' },
+          { id: 2, title: 'Plein 2000', url: '/plein-2000' },
+          { id: 3, title: 'Kindervrijmarkt', url: '/kindervrijmarkt' },
+          { id: 4, title: 'Oranjemarkt', url: '/oranjemarkt' },
+          { id: 5, title: 'Kermis', url: '/kermis' },
+          { id: 6, title: 'Taptoe', url: '/taptoe' },
+          { id: 7, title: 'Foto\'s', url: '/fotos' },
+          { id: 8, title: 'Toiletten', url: '/toiletten' },
+          { id: 9, title: 'Verkeer en Parkeren', url: '/verkeer-en-parkeren' },
+          { id: 10, title: 'Contact', url: '/contact' }
+        ]
+      }
+    },
   }
-}
-)
-
 </script>
 
 <style lang="scss" scoped>

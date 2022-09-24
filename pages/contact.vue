@@ -6,14 +6,10 @@
 
 <script lang="ts">
 
-import Vue from 'vue'
-
-export default Vue.extend({
-  head () {
-    return {
-      title: 'Contact | Koningsdag Huizen'
-    }
+export default {
+  head: {
+    title: 'Contact | Koningsdag Huizen'
   }
-})
+}
 
 </script>
