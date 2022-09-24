@@ -79,7 +79,7 @@
 
 .nav .menu {display: flex; margin: auto 0 auto auto;}
 .nav .menu a {color: #fff; font-size: 14px; display: block; text-decoration: none; outline: none; font-family: "Open Sans",Helvetica,Arial,Sans-Serif; display: block; padding: 10px; line-height: 1; border-radius: 3px; transition: all 0.3s ease 0s; font-weight: 700; margin-left: 10px;}
-.nav .menu a.nuxt-link-exact-active {background: rgba(255,255,255,.15);}
+.nav .menu a.router-link-exact-active {background: rgba(255,255,255,.15);}
 
 .nav .resmenu,
 .nav .menuButton {display: none;}
@@ -89,6 +89,6 @@
   .nav .menuButton {display: block; margin: auto 0 auto auto; background: rgba(255,255,255,.15); color: #fff; padding: 10px; line-height: 1; font-size: 14px; font-weight: bold; border-radius: 3px;}
   .nav .resmenu {display: block; height: calc(100vh - 100px); overflow-y: auto; padding-top: 30px; box-sizing: border-box; position: absolute; top: 100px; left: 0; right: 0; background: #fff;}
   .nav .resmenu a {color: #000; font-weight: bold; display: block; border-bottom: 1px solid #eee; padding: 10px; text-decoration: none;}
-  .nav .resmenu a.nuxt-link-exact-active {color: #fc8100;}
+  .nav .resmenu a.router-link-exact-active {color: #fc8100;}
 }
 </style>
