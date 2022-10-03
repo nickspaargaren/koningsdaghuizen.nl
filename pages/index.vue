@@ -1,7 +1,17 @@
 <script setup>
-  const { data: plein2000 } = await useAsyncData("plein2000", () => queryContent("/plein-2000").findOne());
-  const { data: taptoe } = await useAsyncData("taptoe", () => queryContent("/taptoe").findOne());
-  const { data: kermis } = await useAsyncData("kermis", () => queryContent("/kermis").findOne());
+const { data: plein2000 } = await useAsyncData("plein2000", () =>
+  queryContent("/plein-2000").findOne()
+);
+const { data: taptoe } = await useAsyncData("taptoe", () =>
+  queryContent("/taptoe").findOne()
+);
+const { data: kermis } = await useAsyncData("kermis", () =>
+  queryContent("/kermis").findOne()
+);
+
+useHead({
+  titleTemplate: () => "Welkom | Koningsdag Huizen",
+});
 </script>
 
 <template>
@@ -9,7 +19,7 @@
     <Slider />
 
     <div class="content">
-      <div style="text-align: center;">
+      <div style="text-align: center">
         <ContentDoc path="/welkom" />
       </div>
 

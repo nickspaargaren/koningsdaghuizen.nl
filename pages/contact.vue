@@ -1,15 +1,9 @@
-<template>
-  <div class="content">
-    Contact
-  </div>
-</template>
-
-<script lang="ts">
-
-export default {
-  head: {
-    title: 'Contact | Koningsdag Huizen'
-  }
-}
-
+<script setup>
+useHead({
+  titleTemplate: () => "Contact | Koningsdag Huizen",
+});
 </script>
+
+<template>
+  <div class="content">Contact</div>
+</template>
