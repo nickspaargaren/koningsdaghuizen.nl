@@ -1,4 +1,5 @@
-export default {
+// https://v3.nuxtjs.org/api/configuration/nuxt.config
+export default defineNuxtConfig({
   head: {
     title: 'koningsdaghuizen.nl',
     htmlAttrs: {
@@ -14,41 +15,16 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
   css: [
     '@/assets/css/main.scss'
   ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
     dirs: [
       '~/components'
     ]
   },
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content'
-  ],
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
-
-  // Disable the Progress Bar
-  loading: false
-}
+  modules: ['@nuxt/content'],
+  content: {
+    // https://content.nuxtjs.org/api/configuration
+  }
+})

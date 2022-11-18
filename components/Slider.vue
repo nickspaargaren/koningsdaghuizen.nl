@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="navigation-wrapper">
-      <div ref="slider" class="keen-slider">
+      <div ref="container" class="keen-slider">
         <div class="keen-slider__slide">
-          <img src="images/slider/slide1.jpg">
+          <img src="~/assets/slider/slide1.jpg" />
         </div>
         <div class="keen-slider__slide">
-          <img src="images/slider/slide2.jpg">
+          <img src="~/assets/slider/slide2.jpg" />
         </div>
       </div>
       <svg
@@ -39,36 +39,49 @@
 </template>
 
 <script>
-import 'keen-slider/keen-slider.min.css'
-import KeenSlider from 'keen-slider'
+import { ref } from "vue";
+
+import { useKeenSlider } from "keen-slider/vue.es";
+import "keen-slider/keen-slider.min.css";
 
 export default {
-  name: 'Slider',
-  data () {
-    return {
-      slider: null
-    }
-  },
-  mounted () {
-    this.slider = new KeenSlider(this.$refs.slider, {
+  setup() {
+    const current = ref(1);
+    const [container, slider] = useKeenSlider({
       loop: true,
-      initial: 1,
+      initial: current.value,
       slideChanged: (s) => {
-        this.current = s.details().relativeSlide
-      }
-    })
+        current.value = s.track.details.rel;
+      },
+    });
+
+    return { container, slider };
   },
-  beforeDestroy () {
-    if (this.slider) { this.slider.destroy() }
-  }
-}
+};
 </script>
 
 <style lang="scss">
-.navigation-wrapper {position: relative;}
-.navigation-wrapper .keen-slider img {width: 100%;}
+.navigation-wrapper {
+  position: relative;
+}
+.navigation-wrapper .keen-slider img {
+  width: 100%;
+}
 
-.arrow {width: 30px; height: 30px; position: absolute; top: 50%; transform: translateY(-50%); fill: #fff; cursor: pointer;}
-.arrow--left {left: 5px;}
-.arrow--right {left: auto; right: 5px;}
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+.arrow--left {
+  left: 5px;
+}
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
 </style>

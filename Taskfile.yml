@@ -54,6 +54,9 @@ tasks:
       - echo Removing node_modules folder..
       - sudo rm -rf node_modules
       - echo node_modules folder removed.
+      - echo Removing .nuxt folder..
+      - sudo rm -rf .nuxt
+      - echo .nuxt folder removed.
       - echo ""
       - docker-compose down -v
     silent: true

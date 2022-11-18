@@ -1,25 +1,11 @@
+<script setup>
+useHead({
+  titleTemplate: () => "Verkeer en Parkeren | Koningsdag Huizen",
+});
+</script>
+
 <template>
   <div class="content">
-    <nuxt-content :document="page" />
+    <ContentDoc path="/verkeer-en-parkeren" />
   </div>
 </template>
-
-<script lang="ts">
-
-import Vue from 'vue'
-
-export default Vue.extend({
-  async asyncData ({ $content }: { $content: any}) {
-    const page = await $content('verkeer-en-parkeren').fetch()
-    return {
-      page
-    }
-  },
-  head () {
-    return {
-      title: `${this.$data.page.title} | Koningsdag Huizen`
-    }
-  }
-})
-
-</script>
