@@ -3,10 +3,10 @@
     <div class="navigation-wrapper">
       <div ref="container" class="keen-slider">
         <div class="keen-slider__slide">
-          <img src="~/assets/slider/slide1.jpg" width="100%" height="auto">
+          <img src="~/assets/slider/slide1.jpg" />
         </div>
         <div class="keen-slider__slide">
-          <img src="~/assets/slider/slide2.jpg" width="100%" height="auto">
+          <img src="~/assets/slider/slide2.jpg" />
         </div>
       </div>
       <svg
@@ -39,33 +39,49 @@
 </template>
 
 <script>
-  import { ref } from 'vue'
+import { ref } from "vue";
 
-import { useKeenSlider } from 'keen-slider/vue.es'
-import 'keen-slider/keen-slider.min.css'
+import { useKeenSlider } from "keen-slider/vue.es";
+import "keen-slider/keen-slider.min.css";
 
 export default {
-  setup(){
-
-    const current = ref(1)
+  setup() {
+    const current = ref(1);
     const [container, slider] = useKeenSlider({
       loop: true,
       initial: current.value,
       slideChanged: (s) => {
-        current.value = s.track.details.rel
+        current.value = s.track.details.rel;
       },
-    })
+    });
 
-    return { container, slider }
-  }
-}
+    return { container, slider };
+  },
+};
 </script>
 
 <style lang="scss">
-.navigation-wrapper {position: relative;}
-.navigation-wrapper .keen-slider img {width: 100%;}
+.navigation-wrapper {
+  position: relative;
+}
+.navigation-wrapper .keen-slider img {
+  width: 100%;
+}
 
-.arrow {width: 30px; height: 30px; position: absolute; top: 50%; transform: translateY(-50%); fill: #fff; cursor: pointer;}
-.arrow--left {left: 5px;}
-.arrow--right {left: auto; right: 5px;}
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+.arrow--left {
+  left: 5px;
+}
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
 </style>
