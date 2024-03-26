@@ -5,5 +5,5 @@ useHead({
 </script>
 
 <template>
-  <div class="content">Plein 2000</div>
+  <UContainer>Plein 2000</UContainer>
 </template>

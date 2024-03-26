@@ -5,5 +5,5 @@ useHead({
 </script>
 
 <template>
-  <div class="content">Foto's</div>
+  <UContainer>Foto's</UContainer>
 </template>

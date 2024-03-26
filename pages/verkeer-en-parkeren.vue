@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-  <div class="content">
+  <UContainer>
     <ContentDoc path="/verkeer-en-parkeren" />
-  </div>
+  </UContainer>
 </template>
