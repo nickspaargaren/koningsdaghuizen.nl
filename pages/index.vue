@@ -5,8 +5,8 @@ const { data: plein2000 } = await useAsyncData("plein2000", () =>
 const { data: taptoe } = await useAsyncData("taptoe", () =>
   queryContent("/taptoe").findOne()
 );
-const { data: kermis } = await useAsyncData("kermis", () =>
-  queryContent("/kermis").findOne()
+const { data: kindervrijmarkt } = await useAsyncData("kindervrijmarkt", () =>
+  queryContent("/kindervrijmarkt").findOne()
 );
 
 useHead({
@@ -27,7 +27,7 @@ useHead({
       <div className="gap-5 grid md:grid-cols-3">
         <Blok :title="plein2000.title" :content="plein2000.intro" />
         <Blok :title="taptoe.title" :content="taptoe.intro" />
-        <Blok :title="kermis.title" :content="kermis.intro" />
+        <Blok :title="kindervrijmarkt.title" :content="kindervrijmarkt.intro" />
       </div>
     </UContainer>
     <UContainer>
