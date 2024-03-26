@@ -20,7 +20,9 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/content", "@nuxt/ui"],
-
+  colorMode: {
+    preference: "light",
+  },
   css: ["@/assets/css/main.scss"],
   components: {
     dirs: ["~/components"],
