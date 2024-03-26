@@ -6,26 +6,32 @@ body {
   line-height: 1.85em;
   overflow-y: scroll;
   color: #404040;
-  font-family: "Open Sans",Helvetica,Arial,Sans-Serif;
+  font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   background-color: #fffdfa;
 }
 
-.content {max-width: 1200px; margin: auto; padding: 20px;}
+p {
+  margin: 0 0 1em 0;
+}
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
   line-height: 1.35em;
 }
 
 h1 {
   color: $primary-color;
-  font-family: "Open Sans",Helvetica Neue,Helvetica,Arial,Sans-Serif;
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-Serif;
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
@@ -33,15 +39,29 @@ h1 {
 
 h2 {
   color: $primary-color;
-  font-family: "Open Sans",Helvetica Neue,Helvetica,Arial,Sans-Serif;
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-Serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
 }
 
-a {color: $primary-color;}
+h3 {
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: bold;
+}
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+a {
+  color: $primary-color;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
   text-decoration: none;
   color: inherit;
 }
@@ -49,7 +69,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 blockquote {
   background: #f2f2ef;
   display: block;
-  font-family: "Open Sans",Helvetica Neue,Helvetica,Arial,Sans-serif;
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-serif;
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
@@ -67,12 +87,3 @@ blockquote p {
   text-align: center;
   margin: 0;
 }
-
-/* Grid Templates */
-div[class*="grid"] {display: grid; grid-gap: 30px;}
-div[class*="grid"].vertical-align-middle > div {margin: auto 0;}
-div[class*="grid"] img {max-width: 100%; height: auto !important;}
-.grid-2x {grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));}
-.grid-3x {grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
-.grid-4x {grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));}
-/* Einde Grid Templates */

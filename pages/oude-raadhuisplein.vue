@@ -5,5 +5,5 @@ useHead({
 </script>
 
 <template>
-  <div class="content">Oude raadhuisplein</div>
+  <UContainer>Oude raadhuisplein</UContainer>
 </template>

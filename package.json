@@ -8,12 +8,14 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.2.2",
-    "nuxt": "3.0.0"
+    "@nuxt/content": "^2.12.1",
+    "nuxt": "3.11.1"
   },
   "dependencies": {
+    "@nuxt/ui": "^2.14.2",
     "keen-slider": "^6.8.3",
     "sass": "^1.56.1",
-    "sass-loader": "^13.2.0"
+    "sass-loader": "^13.2.0",
+    "zod": "^3.22.4"
   }
 }
