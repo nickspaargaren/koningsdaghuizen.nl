@@ -13,7 +13,7 @@ const { events: eventsEvening } = await queryContent(
 
 <template>
   <UContainer>
-    <h1>Plein 2000</h1>
+    <ContentDoc path="/plein-2000" />
 
     <h2>Middagprogramma Plein 2000</h2>
     <p>11:00 - 17:00</p>
