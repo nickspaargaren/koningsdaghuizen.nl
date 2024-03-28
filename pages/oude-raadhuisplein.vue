@@ -17,7 +17,7 @@ const { events } = await queryContent("/program/ouderaadhuisplein").findOne();
     <div>
       <div v-for="(event, index) in events" :key="index" class="event">
         <h3>{{ event.description }}</h3>
-        <p class="text-lg">{{ event.time }}</p>
+        <p class="text-lg m-0">{{ event.time }}</p>
       </div>
     </div>
   </UContainer>
