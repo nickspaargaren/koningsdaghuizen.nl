@@ -14,11 +14,6 @@ const { events } = await queryContent("/program/ouderaadhuisplein").findOne();
       Presentatie Eric Holzhauer
     </h5>
 
-    <div>
-      <div v-for="(event, index) in events" :key="index" class="event">
-        <h3>{{ event.description }}</h3>
-        <p class="text-lg m-0">{{ event.time }}</p>
-      </div>
-    </div>
+    <Program :events="events" />
   </UContainer>
 </template>
