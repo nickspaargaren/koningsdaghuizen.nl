@@ -1,13 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="bg-orange-500 text-white">
     <UContainer>Koningsdag Huizen</UContainer>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.footer {
-  background-color: #fc8100;
-  background: linear-gradient(#fe7500, #fc8100);
-  color: #fff;
-}
-</style>

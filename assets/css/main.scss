@@ -1,15 +1,6 @@
 $primary-color: #fc8100;
 
 body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.85em;
-  overflow-y: scroll;
-  color: #404040;
-  font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   background-color: #fffdfa;
 }
 
@@ -23,17 +14,13 @@ h3,
 h4,
 h5 {
   font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
   margin: 0 0 0.5em 0;
-  line-height: 1.35em;
 }
 
 h1 {
   color: $primary-color;
   font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-Serif;
   font-size: 35px;
-  font-style: normal;
   font-weight: 700;
 }
 
@@ -41,14 +28,12 @@ h2 {
   color: $primary-color;
   font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-Serif;
   font-size: 21px;
-  font-style: normal;
   font-weight: 700;
 }
 
 h3 {
   font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-serif;
   font-size: 17px;
-  font-style: normal;
   font-weight: bold;
 }
 
@@ -56,7 +41,6 @@ h5 {
   color: #999;
   font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-serif;
   font-size: 19px;
-  font-style: normal;
   font-weight: normal;
 }
 
@@ -77,48 +61,4 @@ h5 a,
 h6 a {
   text-decoration: none;
   color: inherit;
-}
-
-blockquote {
-  background: #f2f2ef;
-  display: block;
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
-  border-radius: 3px;
-  max-width: 900px;
-}
-
-blockquote p {
-  color: $primary-color;
-  font-family: inherit;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.25em;
-  text-align: center;
-  margin: 0;
-}
-
-.event {
-  position: relative;
-  box-sizing: border-box;
-  border-left: 2px solid #eee;
-  padding: 0 0 20px 30px;
-}
-
-.event::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -7px;
-  border: 2px solid #000;
-  background: #fff;
-  border-radius: 50px;
-  width: 12px;
-  height: 12px;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  top: 8px;
 }
