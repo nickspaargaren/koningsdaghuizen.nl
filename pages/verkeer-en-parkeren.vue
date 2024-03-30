@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 useHead({
   titleTemplate: () => "Verkeer en Parkeren | Koningsdag Huizen",
 });

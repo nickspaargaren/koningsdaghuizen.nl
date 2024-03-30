@@ -6,4 +6,5 @@ export default defineAppConfig({
       padding: "p-5",
     },
   },
+  nuxtIcon: {},
 });

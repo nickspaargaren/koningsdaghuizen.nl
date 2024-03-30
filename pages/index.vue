@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const { data: plein2000 } = await useAsyncData("plein2000", () =>
   queryContent("/plein-2000").findOne()
 );
@@ -25,9 +25,12 @@ useHead({
     </UContainer>
     <UContainer>
       <div className="gap-5 grid md:grid-cols-3">
-        <Blok :title="plein2000.title" :content="plein2000.intro" />
-        <Blok :title="taptoe.title" :content="taptoe.intro" />
-        <Blok :title="kindervrijmarkt.title" :content="kindervrijmarkt.intro" />
+        <Blok :title="plein2000?.title" :content="plein2000?.intro" />
+        <Blok :title="taptoe?.title" :content="taptoe?.intro" />
+        <Blok
+          :title="kindervrijmarkt?.title"
+          :content="kindervrijmarkt?.intro"
+        />
       </div>
     </UContainer>
     <UContainer>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 useHead({
   titleTemplate: () => "Oude raadhuisplein | Koningsdag Huizen",
 });

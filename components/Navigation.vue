@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const isOpen = ref(false);
 
 const links = [
@@ -23,7 +23,7 @@ const links = [
     </NuxtLink>
 
     <div class="menu">
-      <NuxtLink v-for="item in links" :key="item.id" :to="item.to">
+      <NuxtLink v-for="(item, index) in links" :key="index" :to="item.to">
         {{ item.label }}
       </NuxtLink>
     </div>

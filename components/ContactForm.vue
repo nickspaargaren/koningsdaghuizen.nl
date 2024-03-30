@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { z } from "zod";
 import { ref, reactive } from "vue";
 
@@ -22,7 +22,7 @@ const state = reactive({ ...initialState });
 
 const isOpen = ref(false);
 
-async function onSubmit(event) {
+async function onSubmit() {
   isOpen.value = true;
   Object.assign(state, initialState);
 }
