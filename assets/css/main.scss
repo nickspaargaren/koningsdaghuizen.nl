@@ -1,9 +1,5 @@
 $primary-color: #fc8100;
 
-body {
-  background-color: #fffdfa;
-}
-
 p {
   margin: 0 0 1em 0;
 }
@@ -19,27 +15,23 @@ h5 {
 
 h1 {
   color: $primary-color;
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-Serif;
   font-size: 35px;
   font-weight: 700;
 }
 
 h2 {
   color: $primary-color;
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-Serif;
   font-size: 21px;
   font-weight: 700;
 }
 
 h3 {
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-serif;
   font-size: 17px;
   font-weight: bold;
 }
 
 h5 {
   color: #999;
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, Sans-serif;
   font-size: 19px;
   font-weight: normal;
 }

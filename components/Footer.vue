@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-orange-500 text-white">
+  <div class="bg-primary text-white">
     <UContainer>Koningsdag Huizen</UContainer>
   </div>
 </template>

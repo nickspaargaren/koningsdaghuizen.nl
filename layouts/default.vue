@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-primary-50">
     <Navigation />
     <NuxtPage />
     <Footer />
