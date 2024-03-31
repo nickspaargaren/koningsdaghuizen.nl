@@ -4,10 +4,10 @@ useHead({
 });
 
 const { events: eventsAfternoon } = await queryContent(
-  "/program/plein2000-afternoon"
+  "/program/plein2000-afternoon",
 ).findOne();
 const { events: eventsEvening } = await queryContent(
-  "/program/plein2000-evening"
+  "/program/plein2000-evening",
 ).findOne();
 </script>
 
