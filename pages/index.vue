@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const { data: plein2000 } = await useAsyncData("plein2000", () =>
-  queryContent("/plein-2000").findOne()
+  queryContent("/plein-2000").findOne(),
 );
 const { data: taptoe } = await useAsyncData("taptoe", () =>
-  queryContent("/taptoe").findOne()
+  queryContent("/taptoe").findOne(),
 );
 const { data: kindervrijmarkt } = await useAsyncData("kindervrijmarkt", () =>
-  queryContent("/kindervrijmarkt").findOne()
+  queryContent("/kindervrijmarkt").findOne(),
 );
 
 useHead({
