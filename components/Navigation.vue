@@ -42,7 +42,7 @@ const links = [
       @click="isOpen = !isOpen"
     >
       Menu
-      <UIcon name="i-heroicons-bars-3-16-solid" />
+      <UIcon name="i-mdi-menu" />
     </button>
 
     <USlideover v-model="isOpen">

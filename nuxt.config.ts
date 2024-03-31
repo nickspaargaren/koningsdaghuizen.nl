@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true,
   },
+  ui: {
+    icons: ["mdi"],
+  },
   app: {
     head: {
       title: "koningsdaghuizen.nl",
