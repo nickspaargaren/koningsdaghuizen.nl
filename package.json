@@ -15,7 +15,7 @@
     "vue-tsc": "^2"
   },
   "dependencies": {
-    "@iconify-json/mdi": "^1.1.64",
+    "@iconify-json/mdi": "^1.2.0",
     "@nuxt/ui": "^2.18.6",
     "keen-slider": "^6.8.6",
     "sass": "^1.79.3",
