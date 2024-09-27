@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  srcDir: 'src/',
   typescript: {
     typeCheck: true,
     strict: true,
@@ -30,7 +31,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "light",
   },
-  css: ["@/assets/css/main.scss"],
+  css: ["~/assets/css/main.scss"],
   components: {
     dirs: ["~/components"],
   },
