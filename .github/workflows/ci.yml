@@ -14,3 +14,30 @@ jobs:
         run: yarn prettier src/ --check
       - name: TypeScript
         run: yarn vue-tsc --noEmit
+  playwright:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.47.2-noble
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "yarn"
+          cache-dependency-path: "yarn.lock"
+      - name: Install dependencies
+        run: yarn install
+      - name: Build project
+        run: yarn build
+      - name: Start project
+        run: yarn preview &
+      - name: Run playwright tests
+        run: yarn test
+        env:
+          HOME: /root
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
