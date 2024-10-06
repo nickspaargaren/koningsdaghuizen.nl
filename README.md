@@ -47,4 +47,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Helpful information
 
-Most of the content is located in https://github.com/nickspaargaren/koningsdaghuizen.nl/tree/master/content
+Most of the content is located in https://github.com/nickspaargaren/koningsdaghuizen.nl/tree/master/src/content
