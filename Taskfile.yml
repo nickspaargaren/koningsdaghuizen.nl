@@ -42,12 +42,6 @@ tasks:
       - docker-compose exec app sh -c "yarn lint"
     silent: true
 
-  update:
-    desc: Update all dependencies.
-    cmds:
-      - echo Updating dependencies..
-      - yarn upgrade-interactive --latest
-
   reset:
     desc: Reset the project container, volumes & local dependencies.
     cmds:
