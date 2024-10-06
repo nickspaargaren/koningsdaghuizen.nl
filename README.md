@@ -7,6 +7,7 @@ Requirements:
 - git
 - [Node](https://nodejs.org)
 - Yarn (Recommended via [corepack](https://github.com/nodejs/corepack))
+- Optional: Docker (for [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) setup)
 
 Install the dependencies:
 
