@@ -1,21 +1,5 @@
 # Website koningsdaghuizen-nl.vercel.app
 
-## Development (Docker)
-
-Requirements:
-
-- git
-- [Taskfile](https://taskfile.dev)
-- [Docker](https://www.docker.com/get-started/)
-
-Clone this repository:
-
-```
-git clone git@github.com:nickspaargaren/koningsdaghuizen.nl.git
-```
-
-Run `task` to see all available commands.
-
 ## Development (Local)
 
 Requirements:
