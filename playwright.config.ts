@@ -10,8 +10,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
   use: {
-    baseURL: "http://localhost:3000",
-    // baseURL: "http://host.docker.internal:3000", // macOS
+    baseURL: process.platform === "darwin" ? "http://host.docker.internal:3000" : "http://localhost:3000",
     trace: "on-first-retry",
   },
   projects: [
