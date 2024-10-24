@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-  modules: ["@nuxt/content", "@nuxt/ui"],
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/i18n"],
   colorMode: {
     preference: "light",
   },
@@ -35,4 +35,9 @@ export default defineNuxtConfig({
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
+  i18n: {
+    locales: ['nl'],
+    defaultLocale: 'nl',
+    vueI18n: './src/i18n.config.ts',
+  }
 });

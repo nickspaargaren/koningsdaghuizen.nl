@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 const { data: plein2000 } = await useAsyncData("plein2000", () =>
   queryContent("/plein-2000").findOne(),
 );
@@ -10,14 +12,13 @@ const { data: kindervrijmarkt } = await useAsyncData("kindervrijmarkt", () =>
 );
 
 useHead({
-  titleTemplate: () => "Welkom | Koningsdag Huizen",
+  titleTemplate: () => `${t('welcome')} | Koningsdag Huizen`,
 });
 </script>
 
 <template>
   <div>
     <Slider />
-
     <UContainer>
       <div style="text-align: center">
         <ContentDoc path="/welkom" />

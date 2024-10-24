@@ -1,8 +1,9 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const isOpen = ref(false);
 
 const links = [
-  { label: "Welkom", to: "/" },
+  { label: t('welcome'), to: "/" },
   { label: "Oude Raadhuisplein", to: "/oude-raadhuisplein" },
   { label: "Plein 2000", to: "/plein-2000" },
   { label: "Kindervrijmarkt", to: "/kindervrijmarkt" },
