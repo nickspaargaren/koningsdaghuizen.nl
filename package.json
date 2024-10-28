@@ -8,7 +8,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "playwright test ",
+    "test": "playwright test",
     "test-update-screenshots": "playwright test --update-snapshots",
     "check-types": "nuxi typecheck"
   },
