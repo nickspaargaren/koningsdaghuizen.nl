@@ -11,7 +11,6 @@ export default defineConfig({
   reporter: "html",
   use: {
     baseURL: "http://localhost:3000",
-    // baseURL: "http://host.docker.internal:3000", // macOS
     trace: "on-first-retry",
   },
   projects: [
@@ -19,7 +18,6 @@ export default defineConfig({
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },
     },
-
     {
       name: "firefox",
       use: { ...devices["Desktop Firefox"] },
