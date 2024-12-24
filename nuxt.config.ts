@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-  modules: ["@nuxt/content", "@nuxt/ui"],
+  modules: ["@nuxt/content", "@nuxt/ui", "@nuxt/eslint"],
   colorMode: {
     preference: "light",
   },
