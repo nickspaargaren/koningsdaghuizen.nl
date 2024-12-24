@@ -1,17 +1,17 @@
 <script setup lang="ts">
-const { data: plein2000 } = await useAsyncData("plein2000", () =>
-  queryContent("/plein-2000").findOne(),
-);
-const { data: taptoe } = await useAsyncData("taptoe", () =>
-  queryContent("/taptoe").findOne(),
-);
-const { data: kindervrijmarkt } = await useAsyncData("kindervrijmarkt", () =>
-  queryContent("/kindervrijmarkt").findOne(),
-);
+const { data: plein2000 } = await useAsyncData('plein2000', () =>
+  queryContent('/plein-2000').findOne(),
+)
+const { data: taptoe } = await useAsyncData('taptoe', () =>
+  queryContent('/taptoe').findOne(),
+)
+const { data: kindervrijmarkt } = await useAsyncData('kindervrijmarkt', () =>
+  queryContent('/kindervrijmarkt').findOne(),
+)
 
 useHead({
-  titleTemplate: () => "Welkom | Koningsdag Huizen",
-});
+  titleTemplate: () => 'Welkom | Koningsdag Huizen',
+})
 </script>
 
 <template>
@@ -25,8 +25,14 @@ useHead({
     </UContainer>
     <UContainer>
       <div className="gap-5 grid md:grid-cols-3">
-        <Blok :title="plein2000?.title" :content="plein2000?.intro" />
-        <Blok :title="taptoe?.title" :content="taptoe?.intro" />
+        <Blok
+          :title="plein2000?.title"
+          :content="plein2000?.intro"
+        />
+        <Blok
+          :title="taptoe?.title"
+          :content="taptoe?.intro"
+        />
         <Blok
           :title="kindervrijmarkt?.title"
           :content="kindervrijmarkt?.intro"

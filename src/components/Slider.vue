@@ -1,17 +1,20 @@
 <template>
   <div>
     <div class="navigation-wrapper">
-      <div ref="container" class="keen-slider">
+      <div
+        ref="container"
+        class="keen-slider"
+      >
         <div class="keen-slider__slide">
-          <img src="~/assets/slider/slide1.jpg" />
+          <img src="~/assets/slider/slide1.jpg">
         </div>
         <div class="keen-slider__slide">
-          <img src="~/assets/slider/slide2.jpg" />
+          <img src="~/assets/slider/slide2.jpg">
         </div>
       </div>
       <svg
         :class="{
-          arrow: true,
+          'arrow': true,
           'arrow--left': true,
         }"
         xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +28,7 @@
       <svg
         v-if="slider"
         :class="{
-          arrow: true,
+          'arrow': true,
           'arrow--right': true,
         }"
         xmlns="http://www.w3.org/2000/svg"
@@ -39,25 +42,25 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref } from 'vue'
 
-import { useKeenSlider } from "keen-slider/vue.es";
-import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from 'keen-slider/vue.es'
+import 'keen-slider/keen-slider.min.css'
 
 export default {
   setup() {
-    const current = ref(1);
+    const current = ref(1)
     const [container, slider] = useKeenSlider({
       loop: true,
       initial: current.value,
       slideChanged: (s) => {
-        current.value = s.track.details.rel;
+        current.value = s.track.details.rel
       },
-    });
+    })
 
-    return { container, slider };
+    return { container, slider }
   },
-};
+}
 </script>
 
 <style lang="scss">

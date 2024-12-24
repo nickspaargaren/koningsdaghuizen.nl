@@ -1,16 +1,16 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: () => "Oude raadhuisplein | Koningsdag Huizen",
-});
+  titleTemplate: () => 'Oude raadhuisplein | Koningsdag Huizen',
+})
 
-const { events } = await queryContent("/program/ouderaadhuisplein").findOne();
+const { events } = await queryContent('/program/ouderaadhuisplein').findOne()
 </script>
 
 <template>
   <UContainer>
     <h1>Het Oude Raadhuisplein</h1>
     <h5>
-      10:00 - 18:00 uur<br />
+      10:00 - 18:00 uur<br>
       Presentatie Eric Holzhauer
     </h5>
 

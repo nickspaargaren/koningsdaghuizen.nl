@@ -12,8 +12,6 @@ jobs:
           cache-dependency-path: "yarn.lock"
       - name: Install dependencies
         run: yarn install
-      - name: Prettier
-        run: yarn prettier src/ --check
       - name: ESLint
         run: yarn lint
       - name: TypeScript
