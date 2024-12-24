@@ -8,7 +8,10 @@
         to="https://github.com/nickspaargaren/koningsdaghuizen.nl"
         class="leading-none text-xl text-white hover:text-white/75"
       >
-        <UTooltip text="Broncode" :popper="{ placement: 'top' }">
+        <UTooltip
+          text="Broncode"
+          :popper="{ placement: 'top' }"
+        >
           <UIcon name="i-mdi-github" />
         </UTooltip>
       </NuxtLink>

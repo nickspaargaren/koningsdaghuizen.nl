@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: () => "Verkeer en Parkeren | Koningsdag Huizen",
-});
+  titleTemplate: () => 'Verkeer en Parkeren | Koningsdag Huizen',
+})
 </script>
 
 <template>

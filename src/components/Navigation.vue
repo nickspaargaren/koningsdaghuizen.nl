@@ -1,19 +1,19 @@
 <script setup lang="ts">
-const isOpen = ref(false);
+const isOpen = ref(false)
 
 const links = [
-  { label: "Welkom", to: "/" },
-  { label: "Oude Raadhuisplein", to: "/oude-raadhuisplein" },
-  { label: "Plein 2000", to: "/plein-2000" },
-  { label: "Kindervrijmarkt", to: "/kindervrijmarkt" },
-  { label: "Oranjemarkt", to: "/oranjemarkt" },
-  { label: "Kermis", to: "/kermis" },
-  { label: "Taptoe", to: "/taptoe" },
-  { label: "Foto's", to: "/fotos" },
-  { label: "Toiletten", to: "/toiletten" },
-  { label: "Verkeer en Parkeren", to: "/verkeer-en-parkeren" },
-  { label: "Contact", to: "/contact" },
-];
+  { label: 'Welkom', to: '/' },
+  { label: 'Oude Raadhuisplein', to: '/oude-raadhuisplein' },
+  { label: 'Plein 2000', to: '/plein-2000' },
+  { label: 'Kindervrijmarkt', to: '/kindervrijmarkt' },
+  { label: 'Oranjemarkt', to: '/oranjemarkt' },
+  { label: 'Kermis', to: '/kermis' },
+  { label: 'Taptoe', to: '/taptoe' },
+  { label: 'Foto\'s', to: '/fotos' },
+  { label: 'Toiletten', to: '/toiletten' },
+  { label: 'Verkeer en Parkeren', to: '/verkeer-en-parkeren' },
+  { label: 'Contact', to: '/contact' },
+]
 </script>
 
 <template>
@@ -22,7 +22,11 @@ const links = [
       to="/"
       class="relative bg-white p-4 pt-8 -top-4 -mb-12 rounded-b shadow-xl"
     >
-      <img src="~assets/logo.png" class="w-24" alt="Logo" />
+      <img
+        src="~assets/logo.png"
+        class="w-24"
+        alt="Logo"
+      >
     </NuxtLink>
 
     <div class="hidden xl:flex gap-1 m-auto mr-0">
@@ -31,7 +35,7 @@ const links = [
         :key="index"
         :to="item.to"
         class="text-sm font-bold text-white leading-none p-3 rounded transition hover:bg-white/20 focus:bg-black"
-        exactActiveClass="bg-white/20"
+        exact-active-class="bg-white/20"
       >
         {{ item.label }}
       </NuxtLink>
@@ -66,7 +70,10 @@ const links = [
           </div>
         </template>
 
-        <UVerticalNavigation :links="links" @click="isOpen = false" />
+        <UVerticalNavigation
+          :links="links"
+          @click="isOpen = false"
+        />
       </UCard>
     </USlideover>
   </div>

@@ -1,14 +1,14 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: () => "Plein 2000 | Koningsdag Huizen",
-});
+  titleTemplate: () => 'Plein 2000 | Koningsdag Huizen',
+})
 
 const { events: eventsAfternoon } = await queryContent(
-  "/program/plein2000-afternoon",
-).findOne();
+  '/program/plein2000-afternoon',
+).findOne()
 const { events: eventsEvening } = await queryContent(
-  "/program/plein2000-evening",
-).findOne();
+  '/program/plein2000-evening',
+).findOne()
 </script>
 
 <template>
