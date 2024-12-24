@@ -31,7 +31,7 @@ const links = [
         :key="index"
         :to="item.to"
         class="text-sm font-bold text-white leading-none p-3 rounded transition hover:bg-white/20 focus:bg-black"
-        exactActiveClass="bg-white/20"
+        exact-active-class="bg-white/20"
       >
         {{ item.label }}
       </NuxtLink>

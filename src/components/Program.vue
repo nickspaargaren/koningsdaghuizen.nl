@@ -9,7 +9,7 @@
       <p class="m-0">{{ event.time }}</p>
       <div
         class="absolute w-3.5 h-3.5 rounded-full border-2 bg-primary-50 border-gray-300 top-1 -left-2"
-      ></div>
+      />
     </div>
   </div>
 </template>

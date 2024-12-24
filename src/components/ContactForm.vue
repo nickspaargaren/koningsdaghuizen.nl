@@ -49,9 +49,9 @@ async function onSubmit() {
     <UButton type="submit">Versturen</UButton>
 
     <UAlert
+      v-if="isOpen"
       title="Uw bericht is verzonden."
       description="Bedankt voor uw bericht. We nemen zo snel mogelijk contact met u op."
-      v-if="isOpen"
     />
   </UForm>
 </template>
