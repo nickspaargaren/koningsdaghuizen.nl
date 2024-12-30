@@ -2,13 +2,13 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 3000",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "playwright test ",
+    "test": "playwright test",
     "test-update-screenshots": "playwright test --update-snapshots",
     "check-types": "nuxi typecheck"
   },

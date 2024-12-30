@@ -1,0 +1,15 @@
+{
+	"name": "Node.js & TypeScript",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-18-bookworm",
+	"updateContentCommand": "yarn install",
+	"postAttachCommand": "yarn dev",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Vue.volar",
+				"ms-playwright.playwright"
+			]
+		}
+	},
+	"appPort": 3000
+}
