@@ -15,5 +15,6 @@
 		"docker-in-docker": {
 			"version": "latest"
 		}
-	}
+	},
+	"appPort": 3000
 }
