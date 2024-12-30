@@ -25,15 +25,15 @@ useHead({
     </UContainer>
     <UContainer>
       <div className="gap-5 grid md:grid-cols-3">
-        <Blok
+        <Card
           :title="plein2000?.title"
           :content="plein2000?.intro"
         />
-        <Blok
+        <Card
           :title="taptoe?.title"
           :content="taptoe?.intro"
         />
-        <Blok
+        <Card
           :title="kindervrijmarkt?.title"
           :content="kindervrijmarkt?.intro"
         />
