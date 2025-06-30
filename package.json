@@ -17,7 +17,7 @@
     "@nuxt/eslint": "^1.4.1",
     "@playwright/test": "^1.53.0",
     "@types/node": "^22.15.30",
-    "eslint": "^9.29.0",
+    "eslint": "^9.30.0",
     "nuxt": "^3.17.4",
     "sass": "^1.89.2",
     "typescript": "^5.8.3",
