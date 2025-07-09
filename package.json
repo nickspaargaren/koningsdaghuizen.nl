@@ -21,7 +21,7 @@
     "nuxt": "^3.17.4",
     "sass": "^1.89.2",
     "typescript": "^5.8.3",
-    "vue-tsc": "^2"
+    "vue-tsc": "^3"
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.2.3",
