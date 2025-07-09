@@ -1,28 +1,28 @@
 version: 2
 updates:
-- package-ecosystem: "github-actions"
-  directory: "/"
-  schedule:
-    interval: "monthly"
-- package-ecosystem: "npm"
-  directories:
-    - "/"
-  schedule:
-    interval: "weekly"
-  groups:
-    nuxt:
-      applies-to: version-updates
-      patterns:
-        - "nuxt"
-        - "@nuxt/*"
-    development-dependencies:
-      dependency-type: "development"
-      update-types:
-        - "patch"
-        - "minor"
-      exclude-patterns:
-        - "@playwright/*"
-    playwright:
-      applies-to: version-updates
-      patterns:
-        - "@playwright/*"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directories:
+      - "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      nuxt:
+        applies-to: version-updates
+        patterns:
+          - "nuxt"
+          - "@nuxt/*"
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "patch"
+          - "minor"
+        exclude-patterns:
+          - "@playwright/*"
+      playwright:
+        applies-to: version-updates
+        patterns:
+          - "@playwright/*"
