@@ -18,7 +18,7 @@
     "@playwright/test": "^1.53.0",
     "@types/node": "^22.15.30",
     "eslint": "^9.34.0",
-    "nuxt": "^3.17.4",
+    "nuxt": "^3.19.0",
     "sass": "^1.91.0",
     "typescript": "^5.9.2",
     "vue-tsc": "^3"
