@@ -8980,10 +8980,10 @@ zip-stream@^6.0.1:
     compress-commons "^6.0.2"
     readable-stream "^4.0.0"
 
-zod@^3.25.67:
-  version "3.25.67"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.25.67.tgz#62987e4078e2ab0f63b491ef0c4f33df24236da8"
-  integrity sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==
+zod@^4.1.9:
+  version "4.1.9"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-4.1.9.tgz#c03a0ddb10f5578f13f8f70f1959f89fd09c1c06"
+  integrity sha512-HI32jTq0AUAC125z30E8bQNz0RQ+9Uc+4J7V97gLYjZVKRjeydPgGt6dvQzFrav7MYOUGFqqOGiHpA/fdbd0cQ==
 
 zwitch@^2.0.0, zwitch@^2.0.4:
   version "2.0.4"
