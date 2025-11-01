@@ -15,7 +15,7 @@
   "devDependencies": {
     "@nuxt/content": "^2.13.4",
     "@nuxt/eslint": "^1.10.0",
-    "@playwright/test": "^1.53.0",
+    "@playwright/test": "^1.56.1",
     "@types/node": "^24.9.2",
     "eslint": "^9.39.0",
     "nuxt": "^3.19.0",
