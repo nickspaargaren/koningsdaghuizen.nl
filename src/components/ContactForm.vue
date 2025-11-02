@@ -3,12 +3,12 @@ import { z } from 'zod'
 import { ref, reactive } from 'vue'
 
 const schema = z.object({
-  name: z.string({ message: 'Dit veld is verplicht' }),
+  name: z.string({ error: 'Dit veld is verplicht' }),
   phoneNumber: z
-    .string({ message: 'Dit veld is verplicht' })
+    .string({ error: 'Dit veld is verplicht' })
     .min(8, 'Moet minimaal 8 tekens lang zijn'),
-  email: z.email({ message: 'Dit veld is verplicht' }),
-  question: z.string({ message: 'Dit veld is verplicht' }),
+  email: z.email({ error: 'Vul een geldig e-mail adres in' }),
+  question: z.string({ error: 'Dit veld is verplicht' }),
 })
 
 const initialState = {
