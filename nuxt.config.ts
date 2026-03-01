@@ -26,9 +26,6 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light',
   },
-  content: {
-    // https://content.nuxtjs.org/api/configuration
-  },
   srcDir: 'src/',
   typescript: {
     typeCheck: true,

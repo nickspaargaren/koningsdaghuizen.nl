@@ -3,12 +3,16 @@ useHead({
   titleTemplate: () => 'Plein 2000 | Koningsdag Huizen',
 })
 
-const { events: eventsAfternoon } = await queryContent(
-  '/program/plein2000-afternoon',
-).findOne()
-const { events: eventsEvening } = await queryContent(
-  '/program/plein2000-evening',
-).findOne()
+const afternoonData = await queryCollection('program')
+  .path('/program/plein2000-afternoon')
+  .first()
+
+const eveningData = await queryCollection('program')
+  .path('/program/plein2000-evening')
+  .first()
+
+const eventsAfternoon = afternoonData?.events || []
+const eventsEvening = eveningData?.events || []
 </script>
 
 <template>
