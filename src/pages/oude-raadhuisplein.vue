@@ -3,7 +3,10 @@ useHead({
   titleTemplate: () => 'Oude raadhuisplein | Koningsdag Huizen',
 })
 
-const { events } = await queryContent('/program/ouderaadhuisplein').findOne()
+const data = await queryCollection('program')
+  .path('/program/ouderaadhuisplein')
+  .first()
+const events = data?.events || []
 </script>
 
 <template>

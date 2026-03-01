@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const { data: plein2000 } = await useAsyncData('plein2000', () =>
-  queryContent('/plein-2000').findOne(),
-)
-const { data: taptoe } = await useAsyncData('taptoe', () =>
-  queryContent('/taptoe').findOne(),
-)
-const { data: kindervrijmarkt } = await useAsyncData('kindervrijmarkt', () =>
-  queryContent('/kindervrijmarkt').findOne(),
-)
+const plein2000 = await queryCollection('content').path('/plein-2000').first()
+const taptoe = await queryCollection('content').path('/taptoe').first()
+const kindervrijmarkt = await queryCollection('content')
+  .path('/kindervrijmarkt')
+  .first()
+const welkom = await queryCollection('content').path('/welkom').first()
+const welkomAfsluiter = await queryCollection('content')
+  .path('/welkom-afsluiter')
+  .first()
 
 useHead({
   titleTemplate: () => 'Welkom | Koningsdag Huizen',
@@ -20,7 +20,10 @@ useHead({
 
     <UContainer>
       <div style="text-align: center">
-        <ContentDoc path="/welkom" />
+        <ContentRenderer
+          v-if="welkom"
+          :value="welkom"
+        />
       </div>
     </UContainer>
     <UContainer>
@@ -40,7 +43,10 @@ useHead({
       </div>
     </UContainer>
     <UContainer>
-      <ContentDoc path="/welkom-afsluiter" />
+      <ContentRenderer
+        v-if="welkomAfsluiter"
+        :value="welkomAfsluiter"
+      />
     </UContainer>
   </div>
 </template>
