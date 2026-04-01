@@ -16,10 +16,10 @@
     "@nuxt/content": "^3.11.2",
     "@nuxt/eslint": "^1.15.2",
     "@playwright/test": "1.58.2",
-    "@types/node": "^25.3.3",
+    "@types/node": "^25.5.0",
     "eslint": "^9.39.2",
     "nuxt": "^4.3.1",
-    "sass": "^1.97.3",
+    "sass": "^1.98.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3"
   },
