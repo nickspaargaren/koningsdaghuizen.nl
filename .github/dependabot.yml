@@ -22,7 +22,15 @@ updates:
           - "minor"
         exclude-patterns:
           - "@playwright/*"
+          - "@types/node"
       playwright:
         applies-to: version-updates
         patterns:
           - "@playwright/*"
+      node:
+        applies-to: version-updates
+        update-types:
+          - "patch"
+          - "minor"
+        patterns:
+          - "@types/node"
