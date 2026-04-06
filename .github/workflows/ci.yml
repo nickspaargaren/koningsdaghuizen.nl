@@ -12,6 +12,8 @@ jobs:
         run: corepack enable
       - name: Install dependencies
         run: yarn install --immutable
+      - name: Check dependencies that could be deduplicated
+        run: yarn dedupe --check
       - name: ESLint
         run: yarn lint
       - name: TypeScript
