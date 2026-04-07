@@ -1,4 +1,4 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/4.x/directory-structure/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint'],
   components: {
@@ -25,6 +25,12 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.scss'],
   colorMode: {
     preference: 'light',
+  },
+  content: {
+    database: {
+      type: 'libsql',
+      url: ':memory:',
+    },
   },
   srcDir: 'src/',
   typescript: {
