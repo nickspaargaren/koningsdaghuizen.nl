@@ -11297,7 +11297,7 @@ __metadata:
     nuxt: "npm:^4.4.2"
     sass: "npm:^1.99.0"
     typescript: "npm:^6.0.2"
-    vue-tsc: "npm:^3"
+    vue-tsc: "npm:^3.2.6"
     zod: "npm:^4.3.6"
   languageName: unknown
   linkType: soft
@@ -13210,7 +13210,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-tsc@npm:^3":
+"vue-tsc@npm:^3.2.6":
   version: 3.2.6
   resolution: "vue-tsc@npm:3.2.6"
   dependencies:
