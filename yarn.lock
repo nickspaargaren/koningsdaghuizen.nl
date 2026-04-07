@@ -1157,7 +1157,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/content@npm:^3.11.2":
+"@nuxt/content@npm:^3.12.0":
   version: 3.12.0
   resolution: "@nuxt/content@npm:3.12.0"
   dependencies:
@@ -11040,7 +11040,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@iconify-json/mdi": "npm:^1.2.3"
-    "@nuxt/content": "npm:^3.11.2"
+    "@nuxt/content": "npm:^3.12.0"
     "@nuxt/eslint": "npm:^1.15.2"
     "@nuxt/ui": "npm:^2.22.3"
     "@playwright/test": "npm:1.58.2"

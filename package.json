@@ -13,7 +13,7 @@
     "check-types": "nuxi typecheck"
   },
   "devDependencies": {
-    "@nuxt/content": "^3.11.2",
+    "@nuxt/content": "^3.12.0",
     "@nuxt/eslint": "^1.15.2",
     "@playwright/test": "1.58.2",
     "@types/node": "^24",
