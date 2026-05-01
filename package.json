@@ -13,15 +13,15 @@
     "check-types": "nuxi typecheck"
   },
   "devDependencies": {
-    "@nuxt/content": "^3.12.0",
+    "@nuxt/content": "^3.13.0",
     "@nuxt/eslint": "^1.15.2",
     "@playwright/test": "1.58.2",
     "@types/node": "^24",
-    "eslint": "^10.2.0",
-    "nuxt": "^4.4.2",
+    "eslint": "^10.2.1",
+    "nuxt": "^4.4.4",
     "sass": "^1.99.0",
-    "typescript": "^6.0.2",
-    "vue-tsc": "^3.2.6"
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.2.7"
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.2.3",
