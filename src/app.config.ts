@@ -1,10 +1,11 @@
 export default defineAppConfig({
   ui: {
-    primary: 'orange',
-    gray: 'cool',
+    colors: {
+      primary: 'primary',
+      neutral: 'zinc',
+    },
     container: {
-      padding: 'p-5',
+      base: 'w-full max-w-(--ui-container) mx-auto p-5',
     },
   },
-  nuxtIcon: {},
 })
