@@ -17,7 +17,7 @@ const links = [
 </script>
 
 <template>
-  <div class="bg-primary top-0 p-4 gap-4 sticky z-10 flex">
+  <div class="bg-primary-500 top-0 p-4 gap-4 sticky z-10 flex">
     <NuxtLink
       to="/"
       class="relative bg-white p-4 pt-8 -top-4 -mb-12 rounded-b shadow-xl"
@@ -49,32 +49,32 @@ const links = [
       <UIcon name="i-mdi-menu" />
     </button>
 
-    <USlideover v-model="isOpen">
-      <UCard
-        class="flex flex-col flex-1"
-        :ui="{
-          body: { base: 'flex-1' },
-          ring: '',
-          divide: 'divide-y divide-gray-100 dark:divide-gray-800',
-        }"
-      >
-        <template #header>
-          <div class="flex items-center justify-between">
+    <USlideover v-model:open="isOpen" side="left">
+      <template #content>
+        <div class="flex flex-col h-full p-4">
+          <div class="flex items-center justify-between mb-4">
             <UButton
-              color="gray"
+              color="neutral"
               variant="ghost"
-              icon="i-heroicons-x-mark-20-solid"
-              class="-my-1"
+              icon="i-lucide-x"
               @click="isOpen = false"
             />
           </div>
-        </template>
 
-        <UVerticalNavigation
-          :links="links"
-          @click="isOpen = false"
-        />
-      </UCard>
+          <nav class="flex flex-col gap-1">
+            <NuxtLink
+              v-for="(item, index) in links"
+              :key="index"
+              :to="item.to"
+              class="text-sm font-medium p-3 rounded transition hover:bg-elevated"
+              exact-active-class="bg-elevated"
+              @click="isOpen = false"
+            >
+              {{ item.label }}
+            </NuxtLink>
+          </nav>
+        </div>
+      </template>
     </USlideover>
   </div>
 </template>

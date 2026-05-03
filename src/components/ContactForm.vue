@@ -3,12 +3,12 @@ import { z } from 'zod'
 import { ref, reactive } from 'vue'
 
 const schema = z.object({
-  name: z.string({ error: 'Dit veld is verplicht' }),
+  name: z.string().min(1, 'Dit veld is verplicht'),
   phoneNumber: z
-    .string({ error: 'Dit veld is verplicht' })
+    .string()
     .min(8, 'Moet minimaal 8 tekens lang zijn'),
-  email: z.email({ error: 'Vul een geldig e-mail adres in' }),
-  question: z.string({ error: 'Dit veld is verplicht' }),
+  email: z.string().email('Vul een geldig e-mail adres in'),
+  question: z.string().min(1, 'Dit veld is verplicht'),
 })
 
 const initialState = {
@@ -35,33 +35,33 @@ async function onSubmit() {
     class="space-y-4"
     @submit="onSubmit"
   >
-    <UFormGroup
+    <UFormField
       label="Uw volledige naam"
       name="name"
     >
       <UInput v-model="state.name" />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       label="Telefoon nummer"
       name="phoneNumber"
     >
       <UInput v-model="state.phoneNumber" />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       label="E-mail adres"
       name="email"
     >
       <UInput v-model="state.email" />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       label="Uw vraag of opmerking"
       name="question"
     >
       <UInput v-model="state.question" />
-    </UFormGroup>
+    </UFormField>
 
     <UButton type="submit">
       Versturen
