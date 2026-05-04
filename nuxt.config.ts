@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
-  css: ['~/assets/css/main.scss'],
+  css: ['~/assets/css/main.css'],
   colorMode: {
     preference: 'light',
   },

@@ -2,6 +2,11 @@ import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
   testDir: './tests',
+  webServer: {
+    command: 'yarn build && yarn preview',
+    url: 'http://localhost:3000',
+    reuseExistingServer: true,
+  },
   snapshotPathTemplate:
     '{testDir}/__screenshots__/{projectName}/{testName}{ext}',
   fullyParallel: true,

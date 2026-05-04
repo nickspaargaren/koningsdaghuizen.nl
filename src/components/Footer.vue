@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary text-white">
+  <div class="bg-primary-500 text-white">
     <UContainer
       class="flex justify-between items-center gap-6 whitespace-nowrap"
     >
@@ -8,10 +8,7 @@
         to="https://github.com/nickspaargaren/koningsdaghuizen.nl"
         class="leading-none text-xl text-white hover:text-white/75"
       >
-        <UTooltip
-          text="Broncode"
-          :popper="{ placement: 'top' }"
-        >
+        <UTooltip text="Broncode" placement="top">
           <UIcon name="i-mdi-github" />
         </UTooltip>
       </NuxtLink>
