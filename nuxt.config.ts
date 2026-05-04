@@ -33,6 +33,17 @@ export default defineNuxtConfig({
     },
   },
   srcDir: 'src/',
+  compatibilityDate: '2026-05-04',
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+        'keen-slider/vue.es',
+        'zod',
+      ],
+    },
+  },
   typescript: {
     typeCheck: true,
     strict: true,
