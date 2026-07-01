@@ -18,7 +18,7 @@
     "@playwright/test": "1.60.0",
     "@types/node": "^24",
     "eslint": "^10.4.1",
-    "nuxt": "^4.4.7",
+    "nuxt": "^4.4.8",
     "sass": "^1.100.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.3"
@@ -26,7 +26,7 @@
   "dependencies": {
     "@iconify-json/mdi": "^1.2.3",
     "@libsql/client": "^0.17.3",
-    "@nuxt/ui": "^4.7.1",
+    "@nuxt/ui": "^4.9.0",
     "better-sqlite3": "^12.11.1",
     "keen-slider": "^6.8.6",
     "tailwindcss": "^4.3.0",
