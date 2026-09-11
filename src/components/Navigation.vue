@@ -57,7 +57,7 @@ const links = [
               color="neutral"
               variant="ghost"
               icon="i-lucide-x"
-              @click="isOpen = false"
+              @click="() => { isOpen = false }"
             />
           </div>
 
