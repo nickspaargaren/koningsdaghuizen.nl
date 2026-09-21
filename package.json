@@ -26,7 +26,7 @@
   "dependencies": {
     "@iconify-json/mdi": "^1.2.3",
     "@libsql/client": "^0.17.4",
-    "@nuxt/ui": "^4.9.0",
+    "@nuxt/ui": "^4.11.1",
     "better-sqlite3": "^12.11.1",
     "keen-slider": "^6.8.6",
     "tailwindcss": "^4.3.0",
