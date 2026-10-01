@@ -12055,7 +12055,7 @@ __metadata:
     keen-slider: "npm:^6.8.6"
     nuxt: "npm:^4.5.2"
     sass: "npm:^1.104.0"
-    tailwindcss: "npm:^4.3.0"
+    tailwindcss: "npm:^4.3.3"
     typescript: "npm:^6.0.3"
     vue-tsc: "npm:^3.3.11"
     zod: "npm:^4.5.2"
@@ -12780,10 +12780,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.3.1, tailwindcss@npm:^4.3.0, tailwindcss@npm:^4.3.1":
+"tailwindcss@npm:4.3.1, tailwindcss@npm:^4.3.1":
   version: 4.3.1
   resolution: "tailwindcss@npm:4.3.1"
   checksum: 10c0/7d852a242cd9367c1ba54c0aa4a9f7e437753ed3530f0dd7eb6c9c5be577323695412d3e14df80c28013bfc22cc2b55255558005fc0b73de8d633ff2dfc29b5f
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^4.3.3":
+  version: 4.3.3
+  resolution: "tailwindcss@npm:4.3.3"
+  checksum: 10c0/7e9cd7553cd890ffa5350efb0ca8971ba5435257d0f98bf0714994ac8f1fee5c7cdf9a9da47fe83e8ac995d728410837ac49d3ef5ea66b5afe1db312086ffae2
   languageName: node
   linkType: hard
 
