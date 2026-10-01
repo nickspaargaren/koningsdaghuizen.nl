@@ -13,13 +13,13 @@
     "check-types": "nuxi typecheck"
   },
   "devDependencies": {
-    "@nuxt/content": "^3.16.0",
+    "@nuxt/content": "^3.16.1",
     "@nuxt/eslint": "^1.17.0",
     "@playwright/test": "1.60.0",
     "@types/node": "^24",
-    "eslint": "^10.10.0",
+    "eslint": "^10.11.0",
     "nuxt": "^4.5.2",
-    "sass": "^1.104.0",
+    "sass": "^1.105.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.11"
   },
