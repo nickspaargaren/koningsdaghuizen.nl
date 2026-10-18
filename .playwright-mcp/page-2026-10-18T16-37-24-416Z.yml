@@ -1,0 +1,56 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - link [ref=e5] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e6]
+    - generic [ref=e7]:
+      - link "Welkom" [ref=e8] [cursor=pointer]:
+        - /url: /
+      - link "Oude Raadhuisplein" [ref=e9] [cursor=pointer]:
+        - /url: /oude-raadhuisplein
+      - link "Plein 2000" [ref=e10] [cursor=pointer]:
+        - /url: /plein-2000
+      - link "Kindervrijmarkt" [ref=e11] [cursor=pointer]:
+        - /url: /kindervrijmarkt
+      - link "Oranjemarkt" [ref=e12] [cursor=pointer]:
+        - /url: /oranjemarkt
+      - link "Kermis" [ref=e13] [cursor=pointer]:
+        - /url: /kermis
+      - link "Taptoe" [ref=e14] [cursor=pointer]:
+        - /url: /taptoe
+      - link "Foto's" [ref=e15] [cursor=pointer]:
+        - /url: /fotos
+      - link "Toiletten" [ref=e16] [cursor=pointer]:
+        - /url: /toiletten
+      - link "Verkeer en Parkeren" [ref=e17] [cursor=pointer]:
+        - /url: /verkeer-en-parkeren
+      - link "Contact" [ref=e18] [cursor=pointer]:
+        - /url: /contact
+  - generic [ref=e19]:
+    - img [ref=e27] [cursor=pointer]
+    - generic [ref=e31]:
+      - heading "Welkom op Koningsdag" [level=1] [ref=e32]
+      - heading "De Oranjekermis is weer terug! Van 23 t/m 27 april!" [level=5] [ref=e33]
+      - paragraph [ref=e34]: Het Oude Raadhuisplein is het centrum van de Koningsdagviering in Huizen. Om 10:00 uur begint de Koningsmarkt. Vanaf 10:15 uur zingt het Huizer shantykoor ‘De Zoute Zee’, en even voor elfen komen de gedecoreerden aan van de Brassershoeve naar het Oud Raadhuisplein. Dat zijn inwoners van Huizen die Koninklijk onderscheiden zijn vanwege hun bijzondere verdiensten voor onze samenleving. Ze worden begeleid door Drum- & Showband MCC. Na verwelkoming door de Oranje Stichting Huizen, wordt koningsdag 2024 officieel geopend door Burgemeester Niek Meijer. Ook huldigt hij de mensen die daags daarvóór een Koninklijke Onderscheiding hebben ontvangen.
+      - paragraph [ref=e35]: Dan kan het feest losbarsten! Optredens van artiesten, dansgroepen en gezellige terrasjes maken het feest compleet.
+      - paragraph [ref=e36]: Het stopt om 18:00 uur, maar dan begint om 19:00 het feest op Plein 2000. Om 20:00 uur is de Taptoe.
+    - generic [ref=e38]:
+      - generic [ref=e40]:
+        - heading "Plein 2000" [level=2] [ref=e41]
+        - text: Op Plein 2000 is een middag- en avondprogramma. Het middagprogramma zit vol met muziek, dans en sport gericht op kids en jongeren. Het avondprogramma biedt een wisselend aanbod aan muziekgenres. Het is een programma voor jong en oud! Vanaf 19:00 uur
+      - generic [ref=e43]:
+        - heading "Taptoe" [level=2] [ref=e44]
+        - text: Op het veld van SV Huizen is er een taptoe, die loopt van 20:00 tot 22:00 uur. Het is een prachtig muziekspektakel met optredens van drie korpsen uit verschillende delen van het land. Zo’n 800 personen kunnen plaatsnemen op de overdekte tribune. Er zijn ook voldoende staanplaatsen. De toegang is gratis.
+      - generic [ref=e46]:
+        - heading "Kindervrijmarkt" [level=2] [ref=e47]
+        - text: De kindervrijmarkt wordt gehouden van 10:00 tot 17:00 uur. De Kindervrijmarkt is gratis en voor kinderen tot circa 12 jaar die met een kleedje op de grond hun spulletjes aan de man proberen te brengen. Begeleiders zijn welkom. De kinderen kunnen ’s morgens vanaf 07:00 uur zelf een leuk plekje uitzoeken, maar vol is vol.
+    - generic [ref=e49]:
+      - paragraph [ref=e50]: Koningsdag in Huizen is mogelijk dankzij de inzet van vele vrijwilligers. De coördinatie is in handen van de Oranje Stichting Huizen.
+      - paragraph [ref=e51]: De gemeente geeft weliswaar subsidie, maar het feest is niet mogelijk zonder de bijdrage van sponsoren. Zeer veel dank daarvoor. De namen van de sponsoren vindt je bij de verschillende onderdelen op deze website. Ook op je mobiel is de website prima te bekijken! We krijgen geweldige steun van de gemeente als het gaat om dranghekken, wegafsluitingen, schoonmaken, adviezen, etc. Ook zeer dank daarvoor!
+      - heading [level=3] [ref=e52]:
+        - link [ref=e53] [cursor=pointer]:
+          - /url: "#het-bestuur-van-de-oranje-stichting-huizen-wenst-u-een-geweldige-koningsdag-geniet-van-het-vele-dat-te-beleven-is"
+  - generic [ref=e57]:
+    - generic [ref=e58]: Koningsdag Huizen
+    - link [ref=e59] [cursor=pointer]:
+      - /url: https://github.com/nickspaargaren/koningsdaghuizen.nl
