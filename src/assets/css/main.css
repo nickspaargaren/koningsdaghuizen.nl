@@ -2,6 +2,10 @@
 @import "@nuxt/ui";
 
 @theme {
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+
   --color-primary-50: #fffdfa;
   --color-primary-100: #ffe6a5;
   --color-primary-200: #ffd36d;
